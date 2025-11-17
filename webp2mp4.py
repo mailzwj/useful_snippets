@@ -6,7 +6,9 @@ def webp_to_mp4(webp_path, mp4_path, fps=30):
     width, height = image.size
     
     # 创建视频写入对象
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    # VideoWriter_fourcc指定视频编码格式的函数，完整写法：cv2.VideoWriter_fourcc('M', 'P', '4', 'V')
+    # 以下是简写形式，支持：*'h264'、*'mp4v'、*'i420'、*'xvid'、*'pimi'、*'flv1'、*'theo'、*'mjpg'
+    fourcc = cv2.VideoWriter_fourcc(*'h264')
     video = cv2.VideoWriter(mp4_path, fourcc, fps, (width, height))
     
     # 遍历每一帧并写入视频
