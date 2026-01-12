@@ -4,3 +4,9 @@
 ```bash
 python webp2mp4.py input.webp output.mp4
 ```
+
+## modelscope2comfyui.py
+将魔搭平台训练的Z-Image-Turbo模型的LoRA，转换为ComfyUI兼容的LoRA
+```bash
+python modelscope2comfyui.py /path/to/input.safetensors [/path/to/input_comfyui.safetensors]
+```
