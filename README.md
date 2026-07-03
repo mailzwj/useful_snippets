@@ -12,7 +12,7 @@ python modelscope2comfyui.py /path/to/input.safetensors [/path/to/input_comfyui.
 ```
 
 ## show_shapes.py
-获取使用convert_to_quant对模型进行int8量化时的`--convrot-group-size`参数(或直接尝试：4、8、16、64)
+获取使用convert_to_quant对模型进行int8量化时的`--convrot-group-size`参数(或直接尝试：4、16、64、256)
 ```bash
 python show_shapes.py krea2_turbo_bf16.safetensors
 ```
